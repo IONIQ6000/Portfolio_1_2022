@@ -190,6 +190,20 @@ span{
     text-align: center;
     cursor: pointer;
 }
+.col{
+    position: relative;
+}
+.col img{
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+
+
 
 
 html, body {
