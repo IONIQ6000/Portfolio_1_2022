@@ -201,10 +201,58 @@ span{
     border-radius: 12px;
 }
 
+.contact{
 
+    border-radius: 2rem;
+    width: 64%;
+    margin: 100px auto;
+    padding: 70px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../images/background.jpg);
+ }
+.center h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.center p{
+    font-size: var(--p-font);
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+.contact .action form input[type="email"]{
+    max-width: 100%;
+    width: 470px;
+    padding: 12px 15px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    margin: 0 10px 20px 0;
+    border-radius: .7rem;
+}
+.contact .action form input[type="submit"]{
+    padding: 12px 12px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: none;
+    outline: none;
+    margin: 0 10px 20px 0;
+    border-radius: .7rem;
+}
 
+.ends{
+    text-align: center;
+    padding: 40px;
+}
 
-
+.ends p{
+    font-size: var(--p-font);
+    letter-spacing: .75em;
+}
 
 html, body {
     min-height: 200vh;
