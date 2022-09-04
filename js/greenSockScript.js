@@ -57,4 +57,12 @@ gsap.from('#contact', {
     }
 });
 
-
+gsap.from('.ends', {
+    duration: 1,
+    delay: .7,
+    opacity:0,
+    x:100,
+    scrollTrigger: {
+        trigger: '.ends',
+    }
+});
