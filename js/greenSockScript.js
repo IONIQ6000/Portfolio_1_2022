@@ -47,7 +47,7 @@ gsap.from('.home-ani-5', {
 
 gsap.from('.logo', {
     duration: 1,
-    delay: 1.4,
+    delay: 2,
     opacity: 0,
     x: -300,
 });
@@ -61,7 +61,7 @@ gsap.from('.home-img', {
 
 gsap.from('.navlist', {
     duration: 1,
-    delay: 1.4,
+    delay: 2,
     opacity: 0,
     x: 300,
 
@@ -88,7 +88,7 @@ gsap.from('.about-img', {
 });
 
 gsap.from('#portfolio', {
-    duration: 1.5,
+    duration: 2,
     delay: .6,
     opacity: 0,
     scrollTrigger: {
@@ -96,7 +96,7 @@ gsap.from('#portfolio', {
     }
 });
 gsap.from('#contact', {
-    duration: 1.5,
+    duration: 2,
     delay: .6,
     opacity: 0,
     scrollTrigger: {
@@ -105,7 +105,7 @@ gsap.from('#contact', {
 });
 
 gsap.from('.ends', {
-    duration: 1.5,
+    duration: 2,
     delay: .6,
     opacity: 0,
     scrollTrigger: {
