@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet"
@@ -10,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <header>
@@ -22,7 +24,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#" class="top-btn">Download CV</a></li>
+        <li><a href="#">Download CV</a></li>
     </ul>
 
 </header>
@@ -30,17 +32,20 @@
 
 <section class="home" id="home">
     <div class="home-text">
-        <h3>Hello</h3>
-        <h1>I'm Raph</h1>
-        <h5>I'm a Drexel graduate student <span>from Lancaster</span></h5>
-        <p>Insert short paragraph here</p>
-        <div class="social">
-            <a href="#"><i class='bx bxl-linkedin-square'></i> </a>
-            <a href="#"><i class='bx bxl-github'></i></a>
+        <div class="home-ani-1"><h3>Hello</h3></div>
+        <div class="home-ani-2"><h1>I'm Raph</h1></div>
+        <div class="home-ani-3"><h5>I'm a Drexel graduate student <span>from Lancaster</span></h5></div>
+        <div class="home-ani-4"><p>Scroll down to see more</p></div>
+        <div class="home-ani-5">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/raph-per/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/IONIQ6000"><i class='bx bxl-github'></i></a>
+            </div>
         </div>
-        <div class="home-img">
-            <img src="" alt="">
-        </div>
+
+    </div>
+    <div class="home-img">
+        <img src="images/DrexelLogo.png" alt="">
     </div>
 </section>
 
@@ -61,9 +66,12 @@
 <div class="hscrollFromLeft">
     <body-text class="title-font">Kotlin</body-text>
 </div>
+
+<div style="height:30vh"></div>
+
 <section class="about" id="about">
     <div class="about-img">
-        <img src="img/about.jpg" alt="">
+        <img src="images/portrait.jpg" alt="">
     </div>
     <div class="about-text">
         <h3>sample text</h3>
@@ -72,59 +80,79 @@
         <p>sample paragraph</p>
 
     </div>
-
 </section>
+
+<div style="height:30vh"></div>
+
 <section class="portfolio" id="portfolio">
     <div class="heading">
         <h3>Portfolio</h3>
         <h2>My Work</h2>
-        <p>Sample Text</p>
-
+        <p>Click on each link to view the project directly</p>
     </div>
-
     <div class="portfolio-content">
         <div class="col">
-            <img src="img/project1.jpg" alt="">
+            <img src="images/project screens/project1.jpg" alt="">
             <div class="layer">
-                <h3>sample text</h3>
-                <h5>desc.</h5>
+                <h3>Tech Storefront</h3>
+                <h3><a href="https://ioniq6000.github.io/CRUD_Store_App/">(link to site)</a></h3>
+                <h5>
+                    • Developed in Javascript and Bootstrap
+                    • An app that can store, update, read and delete from a database.
+                    • Can store large amounts of data at a time.
+                </h5>
             </div>
-        </div>
-        <div class="col">
-            <img src="img/project1.jpg" alt="">
-            <div class="layer">
-                <h3>sample text</h3>
-                <h5>desc.</h5>
-            </div>
-        </div>
-        <div class="col">
-            <img src="img/project1.jpg" alt="">
-            <div class="layer">
-                <h3>sample text</h3>
-                <h5>desc.</h5>
-            </div>
-        </div>
-        <div class="col">
-            <img src="img/project1.jpg" alt="">
-            <div class="layer">
-                <h3>sample text</h3>
-                <h5>desc.</h5>
-            </div>
-        </div>
 
-
+        </div>
+        <div class="col">
+            <img src="images/project screens/project2.png" alt="">
+            <div class="layer">
+                <h3>Daily Coronavirus Tracker</h3>
+                <h3><a href="https://io-cxvid-springdemo.herokuapp.com/">(link to site)</a></h3>
+                <h5>
+                    • Developed in Java with Spring Boot, Maven, Thymeleaf and Bootstrap.
+                    • An app that updates daily from a sanddata library hosted on GitHub under CSSEGISandData.
+                    • Updates daily and provides new differences in cases number from day before.
+                </h5>
+            </div>
+        </div>
+        <div class="col">
+            <img src="images/project screens/project3.jpg" alt="">
+            <div class="layer">
+                <h3>Blackjack Game</h3>
+                <h3><a href="https://ioniq6000.github.io/Blackjack/">(link to site)</a></h3>
+                <h5>
+                    • Developed in Javascript and Bootstrap
+                    • A game that accurately ends the game when the winner has been reached
+                    • Hosted on Github
+                </h5>
+            </div>
+        </div>
+        <div class="col">
+            <img src="" alt="">
+            <div class="layer">
+                <h3>sample text</h3>
+                <h5>desc.</h5>
+            </div>
+        </div>
     </div>
 </section>
+
+<div style="height:20vh"></div>
+
 <section class="contact" id="contact">
     <div class="container">
         <div class="center">
-            <h3>sample text</h3>
-            <p>form sample text</p>
+            <h3>Contact Me</h3>
+            <p>Let's talk</p>
         </div>
         <div class="action">
-            <form>
+            <form action="mailto:theraphael@live.com"
+                  method="POST"
+                  enctype="multipart/form-data"
+                  name="EmailForm">
                 <label>
-                    <input type="email" name="email" placeholder="Email Address:">
+                    <input type="email" name="email" placeholder="Email Address">
                 </label>
                 <input type="submit" name="submit" value="Send">
             </form>
@@ -133,14 +161,14 @@
 </section>
 
 <div class="ends">
-    <p>Made in 2022</p>
+    <p>Made in 2022, animations made with GreenSock</p>
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
-<script src="js/script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/greenSockScript.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
 
 </body>
 </html>

@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
 }
 
+
 :root {
     --bg-color: #ffffff;
     --text-color: #000;
@@ -61,8 +62,7 @@ header {
     position: relative;
 }
 
-.navlist a,
-.top-btn {
+.navlist a{
     display: inline-block;
     padding: .2em .4em;
     margin: .5em;
@@ -111,6 +111,13 @@ section {
     grid-gap: 4rem;
 }
 
+.home-img img{
+    width: 600px;
+    height: auto;
+    float: right;
+}
+
+
 .home-text h1 {
     margin: 10px 0 25px;
     font-size: var(--big-font);
@@ -145,7 +152,7 @@ span {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 30px;
     transition: ease .50s;
     color: var(--main-color);
@@ -222,6 +229,7 @@ span {
     margin-top: 5rem;
     text-align: center;
     cursor: pointer;
+
 }
 
 .col {
@@ -234,6 +242,7 @@ span {
     height: auto;
     object-fit: cover;
     border-radius: 12px;
+    border: 2px solid var(--main-color);
 }
 
 .contact {
@@ -262,7 +271,20 @@ span {
     margin-bottom: 25px;
 }
 
-.contact .action form input[type="email"] {
+.contact .action form input[type="text"]
+{
+    max-width: 100%;
+    width: 150px;
+    padding: 12px 15px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    margin: 0 10px 20px 0;
+    border-radius: .7rem;
+}
+.contact .action form input[type="email"]
+{
     max-width: 100%;
     width: 470px;
     padding: 12px 15px;
@@ -273,8 +295,22 @@ span {
     margin: 0 10px 20px 0;
     border-radius: .7rem;
 }
+.contact .action form #message
+{
+    max-width: 100%;
+    width: 695px;
+    height: 75px;
+    padding: 12px 15px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    margin: 0 10px 20px 0;
+    border-radius: .7rem;
+}
 
-.contact .action form input[type="submit"] {
+.contact .action form input[type="submit"]
+{
     padding: 12px 12px;
     background: var(--main-color);
     color: var(--bg-color);
@@ -291,108 +327,7 @@ span {
 
 .ends p {
     font-size: var(--p-font);
-    letter-spacing: .75em;
-}
-
-
-
-@media (max-width: 1425px){
-    header{
-        padding: 16px 3%;
-        transition: .3s;
-    }
-    header.sticky{
-        padding: 10px 3%;
-        transition: .3s;
-    }
-    section{
-        padding: 70px 3%;
-        transition: .3s;
-    }
-    .contact{
-        width: 95%;
-        transition: .3s;
-    }
-    .root{
-        --big-font: 4rem;
-        --h2-font: 2.3rem;
-        --p-font: 1rem;
-        transition: .3s;
-    }
-}
-
-@media (max-width: 1425px) {
-    #menu-icon{
-        display: block;
-    }
-    .home{
-        min-height: 80vh;
-    }
-    .navlist{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        background: var(--main-color);
-        text-align: right;
-        transition: all .40s;
-    }
-    .navlist a{
-        display: block;
-        padding: 1.2rem;
-        margin: 1.5rem;
-        border-right: 2px solid var(--bg-color);
-        color: var(--bg-color);
-    }
-    .navlist a:hover{
-        background: var(--bg-color);
-        color: var(--main-color);
-    }
-    .navlist a::after{
-        display: none;
-    }
-    .navlist.active{
-        top: 100%;
-    }
-}
-
-@media (max-width: 800px) {
-    .home{
-        grid-template-columns: 1fr;
-        min-height: 130vh;
-        grid-gap: 1rem;
-    }
-    .home-text{
-        padding-top: 55px;
-    }
-    .home-img{
-        text-align: center;
-    }
-    .home-img img{
-        width: 440px;
-        height: auto;
-    }
-    .about{
-        grid-template-columns: 1fr;
-    }
-    .about-img{
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    .root{
-        --big-font: 3.4rem;
-        --h2-font: 2rem;
-    }
-    section{
-        padding: 65% 3%;
-        transition: .3s;
-    }
-}
-@media (max-width: 540px) {
-    .contact .action form input[type="email"] {
-        width: 310px;
-    }
+    letter-spacing: .5em;
 }
 
 
@@ -410,7 +345,7 @@ span {
 
 .elementFromRight {
     position: relative;
-    left: 50%;
+    left: 70%;
 }
 
 
