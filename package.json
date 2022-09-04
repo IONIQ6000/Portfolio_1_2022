@@ -1,7 +1,0 @@
-{
-  "name": "Portfolio_1",
-  "version": "1.0.0",
-  "dependencies": {
-    "gsap": "^3.6.1"
-  }
-}
