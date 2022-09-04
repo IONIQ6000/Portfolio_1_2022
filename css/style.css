@@ -16,10 +16,13 @@
     --h2-font: 3rem;
     --p-font: 1.1rem;
 }
-
+html{
+    overflow-x: hidden;
+}
 body{
     background: var(--bg-color);
     color: var(--text-color);
+
 }
 header{
     position: fixed;
@@ -218,6 +221,7 @@ span{
     justify-content: center;
     text-align: center;
     background-image: url(../images/background.jpg);
+    background-size: cover;
  }
 .center h3{
     font-size: 30px;
@@ -260,9 +264,6 @@ span{
     letter-spacing: .75em;
 }
 
-html, body {
-    min-height: 200vh;
-}
 
 
 
