@@ -358,20 +358,27 @@ span {
     animation: skewing-after 0.3s forwards;
 }
 
+.title-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 11em;
 
+}
 
 .elementFromRight {
     position: relative;
-    left: 70%;
+    left: 9em;
+}
+
+.elementFromLeft {
+    position: relative;
+    right: 9em;
 }
 
 
 .title-font:hover {
-
-    background: -webkit-linear-gradient(-45deg,#ee7752, #b73ce7, #23a6d5, #23d5ab);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: skewing 0.3s forwards,gradient 60s ease infinite;
+    color: var(--main-color);
+    animation: skewing 0.3s forwards;
 }
 
 

@@ -1,16 +1,16 @@
 gsap.to(".hscrollFromLeft", {
-    translateX: "35%",
+    translateX: "200%",
     scrollTrigger: {
         trigger: ".hscrollFromLeft",
-        scrub: 1,
+        scrub: 1.6,
     }
 });
 
 gsap.to(".hscrollFromRight", {
-    translateX: "-35%",
+    translateX: "-200%",
     scrollTrigger: {
         trigger: ".hscrollFromRight",
-        scrub: 1,
+        scrub: 1.6,
     }
 });
 
