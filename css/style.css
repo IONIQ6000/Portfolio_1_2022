@@ -23,10 +23,19 @@ html {
     overflow-x: hidden;
 }
 
-body {
-    background: var(--bg-color);
-    color: var(--text-color);
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
 }
+
 
 header {
     position: fixed;
@@ -102,13 +111,15 @@ section {
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    background: url(../images/background.jpg);
-    background-size: cover;
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     grid-gap: 4rem;
+    background: linear-gradient(-45deg,#ee7752, #b73ce7, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 60s ease infinite;
+
 }
 
 .home-img img{
@@ -127,7 +138,7 @@ section {
 
 .home-text h5 {
     margin-bottom: 23px;
-    font-size: 19px;
+    font-size: 1.5em;
     font-weight: 500;
 }
 
@@ -137,13 +148,13 @@ span {
 
 .home-text h3 {
     color: var(--main-color);
-    font-size: 20px;
+    font-size: 2.5em;
     font-weight: 500;
 }
 
 .home-text p {
     font-size: var(--p-font);
-    color: var(--secound-color);
+    color: #ffffff;
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -255,8 +266,9 @@ span {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url(../images/background.jpg);
-    background-size: cover;
+    background: linear-gradient(-45deg,#ee7752, #b73ce7, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 60s ease infinite;
 }
 
 .center h3 {
@@ -320,6 +332,9 @@ span {
     border-radius: .7rem;
 }
 
+.contact p{
+    color: white;
+}
 .ends {
     text-align: center;
     padding: 40px;
@@ -343,6 +358,8 @@ span {
     animation: skewing-after 0.3s forwards;
 }
 
+
+
 .elementFromRight {
     position: relative;
     left: 70%;
@@ -350,8 +367,11 @@ span {
 
 
 .title-font:hover {
-    color: var(--main-color);
-    animation: skewing 0.3s forwards;
+
+    background: -webkit-linear-gradient(-45deg,#ee7752, #b73ce7, #23a6d5, #23d5ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: skewing 0.3s forwards,gradient 60s ease infinite;
 }
 
 
